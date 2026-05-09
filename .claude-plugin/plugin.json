@@ -1,0 +1,8 @@
+{
+  "name": "proma",
+  "description": "ProMa — general-purpose project management plugin. Tracks epics, tasks, human inbox, and decisions using pure markdown. Install and run /proma:init to get started.",
+  "version": "1.0.0",
+  "author": { "name": "Dhairyasheel Patil", "email": "dp3979@nyu.edu" },
+  "license": "MIT",
+  "keywords": ["project-management", "pm", "keel", "tasks", "epics"]
+}

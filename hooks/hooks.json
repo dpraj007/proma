@@ -1,0 +1,8 @@
+{
+  "hooks": [
+    {
+      "type": "SessionStart",
+      "command": "node hooks/tick-check.js"
+    }
+  ]
+}
