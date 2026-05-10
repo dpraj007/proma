@@ -12,6 +12,16 @@ ProMa is a Claude Code plugin that gives any project persistent, cross-session p
 claude --plugin-dir /path/to/proma
 ```
 
+### Activate for Every Session
+
+**Start Claude Code with `@proma` to have Claude act as your project manager for the entire session:**
+
+```bash
+claude @proma
+```
+
+This loads the PM persona automatically at session start — no need to manually run `/proma:boot` each time. The full project context (epics, tasks, open inbox items, last tick) is injected immediately, so Claude is PM-brained from the first message.
+
 ---
 
 ## Quick Start
@@ -19,6 +29,27 @@ claude --plugin-dir /path/to/proma
 1. `/proma:init` — scaffold the `proma/` directory in your project
 2. Answer **IN-001** in `proma/INBOX.md` (project scope and goals)
 3. `/proma:boot` — activate the PM persona and inject context into `CLAUDE.md`
+4. **Going forward, skip steps 2–3:** just start every session with `claude @proma`
+
+---
+
+## Usage
+
+Two workflows — pick the right one for where you are:
+
+**First time (new project):**
+```
+/proma:init          # scaffold proma/ directory
+# answer IN-001 in proma/INBOX.md
+/proma:boot          # activate PM persona
+```
+
+**Every session after that:**
+```bash
+claude @proma        # PM persona loads automatically — just start working
+```
+
+That's it. `@proma` is the on-ramp. Everything else is driven by `/proma:*` commands from inside the session.
 
 ---
 
